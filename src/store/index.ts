@@ -1,5 +1,5 @@
 import { Pokemon } from "@/models/models";
-import UtilsModels from "@/models/UtilsModels";
+import UtilsModels from "@/models/utilsModels";
 import { createStore } from "vuex";
 
 // enum TypesMutations {

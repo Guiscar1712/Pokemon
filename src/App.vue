@@ -1,30 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <div class="nav">
+      <img class="img" src="pokebola.png">
+      <a class="a">
+        Pokemon app
+      </a>
+    </div>
   </div>
   <router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
+.nav {
+  height: 50px;
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  margin-bottom: 2%;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+    padding-left: 2%;
+    font-size: 25px;
+    align-items: center;
+  }
+  img {
+    padding-left: 4%;
   }
 }
 </style>

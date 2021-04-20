@@ -42,7 +42,7 @@ import { Options, Vue } from "vue-class-component";
 import { PokemonServiceInstance } from "@/store/pokemonService";
 import PopupDetailsPokemon from "@/components/PopupPokemon.vue";
 import { Pokemon } from "src/models/models";
-import UtilsModels from '@/models/UtilsModels'
+import UtilsModels from '@/models/utilsModels'
 import store from "@/store";
 import { isMobile } from "mobile-device-detect";
 @Options({

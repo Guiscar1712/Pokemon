@@ -98,7 +98,7 @@
 
 <script lang="ts">
 import { Pokemon } from "@/models/models";
-import UtilsModels from "@/models/UtilsModels";
+import UtilsModels from "@/models/utilsModels";
 import store from "@/store";
 import { Options, Vue } from "vue-class-component";
 import { isMobile } from 'mobile-device-detect';

@@ -1,12 +1,8 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import { PokemonServiceInstance } from 'src/store/pokemonService'
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      props: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
-  });
+it("Request API", async () => {
+  const msg = "Deu certo!";
+  const requestAPI = await PokemonServiceInstance.getListPokemon()
+  expect(requestAPI).toEqual(msg)
 });

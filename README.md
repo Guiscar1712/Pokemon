@@ -17,30 +17,17 @@
 - [x] Utilizar SASS(variáveis, mixins, etc).
 - [x] A aplicação deverá ser responsiva, mobile-first.
 
-## Project setup
+## Instalar dependências
 ```
 yarn
 ```
 
-### Compiles and hot-reloads for development
+### Executar em modo Desenvolvimento
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
+### Executar testes unitários
 ```
 yarn test:unit
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

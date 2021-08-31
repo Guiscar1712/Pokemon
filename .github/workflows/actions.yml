@@ -22,4 +22,4 @@ jobs:
             node-version: 16
 
       - name: Install Dependencies
-        run: yarn
+        run: yarn --network-timeout 100000

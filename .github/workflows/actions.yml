@@ -15,18 +15,6 @@ jobs:
       with:
         args: .head_commit.message .*#pr.*
 
-
-    - name: Create PR automatic
-      uses: "smartinspereira/auto-create-pr-action@master"
-      env: {
-        BRANCH_PREFIX: "",
-        BASE_BRANCH: "",
-        PULL_REQUEST_TITLE: "",
-        PULL_REQUEST_BODY: "",
-        PULL_REQUEST_DRAFT: "true"
-      }
-
-
   build:
     runs-on: ubuntu-latest
 

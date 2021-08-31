@@ -1,10 +1,22 @@
-name: learn-github-actions
-on: [push]
+name: Checking Tests Repository
+
+on: [ pull_request, push ]
+
 jobs:
-  check-bats-version:
+
+  build:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout Repository
       - uses: actions/checkout@v2
+        with: 
+            fetch-depth: 0
+
+      - name: Set up Node
       - uses: actions/setup-node@v1
-      - run: npm install -g bats
-      - run: bats -v
+        with: 
+            node-version: 16
+
+      - name: Install Dependencies
+      - run: yarn

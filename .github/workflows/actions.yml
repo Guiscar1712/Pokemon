@@ -7,11 +7,13 @@ jobs:
   automation:
     runs-on: ubuntu-latest
     steps:
-    - name: Assign PR to creator
-      uses: thomaseizinger/assign-pr-creator-action@v1.0.0
-      if: github.event_name == 'pull_request' && github.event.action == 'opened'
+
+    - name: Create PR
+      uses: funivan/github-autopr@0.2.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        args: .head_commit.message .*#pr.*
 
   build:
     runs-on: ubuntu-latest
@@ -41,3 +43,6 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
+      - name: Build Application
+        run: pm2 deploy homolog

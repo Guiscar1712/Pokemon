@@ -1,6 +1,8 @@
 <h1 align="center">Projeto Pokemon VUE JS</h1>
 <h3 align="center">Web app com implementação da API Pokemon TCG (Sem o SDK)</h1>
 
+//TESTE124
+
 ## Tabela de conteúdos
 <p>
  <a href="https://github.com/Guiscar1712/Pokemon/blob/main/src/components/ListPokemon.vue">Lista de Pokemons</a> •
